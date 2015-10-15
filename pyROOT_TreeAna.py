@@ -19,8 +19,9 @@ class TreeAna :
     self.myfile = TFile( args[0] )
     self.treePath = options.treePath
   def Ana(self,mychain) :
-    for jpsi_mass in mychain.jpsi_mass :
-      print jpsi_mass
+    pass
+    #for jpsi_mass in mychain.jpsi_mass :
+    #  print jpsi_mass
   def Loop(self) :
     # retrieve the ntuple of interest
     mychain = self.myfile.Get( self.treePath )
